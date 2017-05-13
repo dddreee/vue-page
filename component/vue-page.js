@@ -24,7 +24,7 @@ Vue.component('page',{
     },
     computed: {
         len: function(){        //计算总页数
-            return Math.floor(this.total/this.pageSize)
+            return Math.ceil(this.total/this.pageSize)
         },
         half: function(){       //计算最大展示页数的一半，用于翻页时，保证前页显示在中间
             return Math.floor(this.max/2)
