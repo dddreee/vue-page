@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" href="./css/font/iconfont.css" rel="stylesheet" >
+    <link type="text/css" href="index.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<div id="test">
+    <!--<page :total="total" @page-change="handler" :page-size="pageSize" :current-page="currentPage"></page>-->
+    <page :page-size="pageSize" :max="max" :current-page="currentPage" :total="total" @page-change="handler"></page>
+</div>
+
+<script src="src/vue.min.js"></script>
+<script src="component/vue-page.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

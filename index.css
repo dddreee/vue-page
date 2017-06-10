@@ -5,33 +5,51 @@
 ul,li{
     list-style: none
 }
-
 .mj-pages{
-    border-left: 1px solid #01d5b6;
+//border-left: 1px solid #01d5b6;
     user-select: none;
-
+    display: inline-block;
+    padding-left: 0;
 }
 
 .mj-page{
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
     font-size: 14px;
     color: #666;
     box-sizing: border-box;
-    border-top: 1px solid #01d5b6;
-    border-bottom: 1px solid #01d5b6;
-    border-right: 1px solid #01d5b6;
     text-align: center;
-    cursor: pointer
+    cursor: pointer;
+    vertical-align: middle;}
+.icon-left-arrow, .icon-right-arrow{
+    font-size: 24px;
+}
+.icon-left-more, .icon-right-more{
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+.icon-left-more:before, .icon-right-more:before{
+    content: '...';
+    position: absolute;
+    width: 100%;
+    font-size: 24px;
+    bottom: 8px;
+    left: 0;
+}
 
-}
+
 .mj-page.active{
-    background: #01d5b6;
+    background: #2e95fe;
     color: #fff;
+    border-radius: 50%;
 }
+
 
 .mj-page:not(.active):hover{
-    color: #01d5b6;
+    color: #2e95fe;
 }
